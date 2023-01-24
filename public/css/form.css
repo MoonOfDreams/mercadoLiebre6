@@ -1,0 +1,60 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  --tipografia: "Roboto", sans-serif;
+  --Parrafo: 12px;
+  --Des: 16px;
+  --Precio: 18px;
+  --Titulo: 24px;
+}
+main {
+    padding: 15px;
+}
+main form{
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    gap:20px;
+    max-width:500px;
+
+}
+main form div{
+    display: flex;
+    flex-direction:column;
+    
+}
+main form div.item{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 5px;
+}
+main form div span{
+    font-size: 0.8rem;
+    color: red;
+    margin-top: 5px;
+}
+
+ main form div input{
+    border: none;
+    outline: none;
+    padding: 7px;
+    border-radius:10px;
+ }
+ main form button{
+    color:white ;
+    background-color:var(--celeste);
+    border: none;
+    outline: none;
+    padding:5px;
+    transition:background-color 0.5s;
+ }
+ main form button:hover{
+   background-color:  #0022aa;
+ }

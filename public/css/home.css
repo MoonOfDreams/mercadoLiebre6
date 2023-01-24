@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  --tipografia: "Roboto", sans-serif;
+  --Parrafo: 12px;
+  --Des: 16px;
+  --Precio: 18px;
+  --Titulo: 24px;
+}
+
+main section article img {
+  width: 100%;
+}
+body {
+  background-color: var(--gris-claro);
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+main section {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main section h4 {
+  width: 100%;
+}
+img.banner {
+  width: 100%;
+}
+main section article {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 10px;
+}
+main section article h2 {
+  display: none;
+}
+main section article div.caja {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: var(--verde);
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+main section article div p.precio {
+  font-size: var(--Precio);
+  width: 30%;
+}
+main section article div p.descuento {
+  color: var(--verde);
+  font-size: var(--Des);
+  width: 70%;
+}
+
+/* Tablet */
+
+@media (min-width: 361px) {
+  main section article {
+    width: calc(50% - 10px);
+  }
+  main section article i{
+    transition:rotate 0.5s ease;
+  }
+  main section article:hover i{
+   rotate: -90deg;
+  }
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  main section article:hover div h2 {
+    display: block;
+  }
+  main section article div p.precio {
+    font-size: 14.5px;
+    justify-content: space-between;
+  }
+  main section article div p.descuento {
+    font-size: 14.5px;
+    text-align: end;
+  }
+}
+@media (min-width: 769px) {
+  main section article {
+    width: calc(25% - 10px);
+  }
+}
